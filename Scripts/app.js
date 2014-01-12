@@ -43,4 +43,24 @@
     $window.on('load', function () {
         $body.scrollspy('refresh');
     });
+
+    // back to top
+    setTimeout(function () {
+        var $sideBar = $('.c4-sidebar');
+
+        $sideBar.affix({
+            offset: {
+                top: function () {
+                    var offsetTop = $sideBar.offset().top,
+                        sideBarMargin = parseInt($sideBar.children(0).css('margin-top'), 10),
+                        navOuterHeight = $('.c4-docs-nav').height();
+
+                    return (this.top = offsetTop - navOuterHeight - sideBarMargin);
+                },
+                bottom: function () {
+                    return (this.bottom = $('.c4-footer').outerHeight(true));
+                }
+            }
+        });
+    }, 100);
 }));
