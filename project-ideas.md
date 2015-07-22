@@ -21,5 +21,7 @@ Project Ideas
 -------------
 
 
+Notes
+-----
 
 NOTE: This is a temporary page; we are working on a new website that will provide a form for submitting and searching for projects.
