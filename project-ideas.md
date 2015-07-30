@@ -12,7 +12,8 @@ Please describe your project using the following format:
     
     Description of project
     
-    tags: comma, delimited, list, of, tags
+    **Contact**: name (title, email | phone)
+    **Tags**: comma, delimited, list, of, tags
 
 Please submit your project ideas via [Github pull request](https://github.com/c4fsharp/c4fsharp.github.io/pulls).
 
