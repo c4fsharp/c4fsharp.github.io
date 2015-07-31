@@ -1,12 +1,14 @@
-Project Incubation
+Project Ideas
 ==================
 
-Please add project ideas for some "nice-to-have" projects
-for groups to take up as part of a curriculum or independent learning.
-It would be great inspiration for students to work on a real-
-world projects, contributing to an open-source community.
+This is a curated list of F# project ideas including:
 
-Please describe your project using the following format:
+* "nice-to-have" projects for groups and individuals to take up as part of a curriculum or independent learning
+* ways to contribute to the F# open source community.
+
+It is a great inspiration for students to work on a real-world projects, contributing to an open-source community.
+
+Please add project ideas using the following format:
 
     ### Example Project Name
     
