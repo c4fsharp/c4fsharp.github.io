@@ -1,5 +1,9 @@
-Project Ideas
-==================
+---
+layout: default
+title: Project Ideas
+---
+
+# {{ page.title }}
 
 This is a curated list of F# project ideas including:
 
@@ -19,9 +23,7 @@ Please add project ideas using the following format:
 
 Please submit your project ideas via [Github pull request](https://github.com/c4fsharp/c4fsharp.github.io/pulls).
 
-
-Project Ideas
--------------
+## Project Ideas
 
 ### Type providers for interesting data sources
 
@@ -74,8 +76,6 @@ This is probably more theoretical or experimental project, but it could be imple
 **Contact**: Tomas Petricek (tomas@tomasp.net or [@tomaspetricek](http://twitter.com/tomaspetricek)  
 **Tags**: types, fuzzy logic, checking, static, dynamic
 
-
-Notes
------
+## Notes
 
 NOTE: This is a temporary page; we are working on a new website that will provide a form for submitting and searching for projects.
