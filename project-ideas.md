@@ -1,6 +1,6 @@
 ---
-layout: default
 title: Project Ideas
+layout: default
 ---
 
 # {{ page.title }}
