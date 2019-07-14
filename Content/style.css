@@ -12,7 +12,7 @@ body {
 
 .c4-header {
     color: #fff;
-    background-color: #497c3d;
+    background-color: #F99D25;
     padding: 30px 15px 40px; /* side padding builds on .container 15px, so 30px */
     font-size: 16px;
     text-align: center;
@@ -21,6 +21,11 @@ body {
 
 .c4-header h1 {
     color: #fff;
+    width: 100%;
+}
+
+.c4-header h1 img {
+    width: 100%;
 }
 
 .c4-header p {
