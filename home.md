@@ -1,6 +1,6 @@
 ﻿---
-layout: default
 title: Home
+layout: default
 ---
 
 {:#online-presentations}
