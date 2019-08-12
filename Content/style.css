@@ -172,6 +172,3 @@ h1[id] {
     padding-top: 80px;
     margin-top: -45px;
 }
-
-#heroes form input { display: block; width: 375px; }
-#heroes form textarea { display: block; height: 150px; width: 375px; }
