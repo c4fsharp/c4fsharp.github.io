@@ -26,6 +26,7 @@
       ga('create', 'UA-47056767-1', 'c4fsharp.net');
       ga('send', 'pageview');
     </script>
+    <script src="pwabuilder-sw-register.js"></script>
 </head>
 <body>
     <a class="sr-only" href="#content">Skip to main content</a>
@@ -44,18 +45,5 @@
         {% include footer.html %}
 
     </div>
-
-    <script>
-if ("serviceWorker" in navigator) {
-  navigator.serviceWorker
-    .register("service-worker.js")
-    .then(serviceWorker => {
-      console.log("Service Worker registered: ", serviceWorker);
-    })
-    .catch(error => {
-      console.error("Error registering the Service Worker: ", error);
-    });
-}
-    </script>
 </body>
 </html>
