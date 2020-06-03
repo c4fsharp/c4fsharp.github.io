@@ -27,20 +27,20 @@ Please submit your project ideas via [Github pull request](https://github.com/c4
 
 ### Type providers for interesting data sources
 
-The F# type provider mechanism makes it possible to integrate external data sources into F#. One good example is the [WorldBank type provider from F# Data](http://fsharp.github.io/FSharp.Data/library/WorldBank.html), which implements type provider for a specific (and interesting) data source. 
+The F# type provider mechanism makes it possible to integrate external data sources into F#. One good example is the [WorldBank type provider from F# Data](https://fsharp.github.io/FSharp.Data/library/WorldBank.html), which implements type provider for a specific (and interesting) data source. 
 
 ![WorldBank type provider](http://tomasp.net/articles/fsharp-loosely-typed/tooltip.png)
 
-Another kind is the [JSON type provider](http://fsharp.github.io/FSharp.Data/library/JsonProvider.html), which implements type provider for a speicfic data _format_ (using type inference mechanism), but it can work with any JSON files.
+Another kind is the [JSON type provider](https://fsharp.github.io/FSharp.Data/library/JsonProvider.html), which implements type provider for a speicfic data _format_ (using type inference mechanism), but it can work with any JSON files.
 
 There is a number of interesting data sources and creating a type provider for them would be an interesting project:
 
- - Open government data sources: [EU open data](https://github.com/fsharp/FSharp.Data/issues/470), [UK open data](http://data.gov.uk) and [US open data](http://data.gov) 
+ - Open government data sources: [EU open data](https://github.com/fsharp/FSharp.Data/issues/470), [UK open data](https://data.gov.uk) and [US open data](https://data.gov) 
  - [Yahoo Finance type provider](https://github.com/fsharp/FSharp.Data/issues/39) for accessing stock prices
  - [PDF type provider](https://github.com/fsharp/FSharp.Data/issues/414) for extracting tables from PDF
  - Various REST description formats like [RAML](https://github.com/fsharp/FSharp.Data/issues/302), [WADL](https://github.com/fsharp/FSharp.Data/issues/156) an [API Blueprint](https://apiary.io/blueprint)
 
-**Contact**: Tomas Petricek (tomas@tomasp.net or [@tomaspetricek](http://twitter.com/tomaspetricek)  
+**Contact**: Tomas Petricek (tomas@tomasp.net or [@tomaspetricek](https://twitter.com/tomaspetricek)  
 **Tags**: type providers, api, rest, web, data 
 
 ### Visual Editor for Domain Specific Languages
@@ -60,7 +60,7 @@ The code can be quite nicely represented visually, showing how the data flow thr
 
 The idea of this project is to design some editor (or, at least, visualizer) that can take code written using DSL and display it visually and allow the user to edit it. This should work for any DSL (although it may need to be annotated in some way).
 
-**Contact**: Tomas Petricek (tomas@tomasp.net or [@tomaspetricek](http://twitter.com/tomaspetricek)  
+**Contact**: Tomas Petricek (tomas@tomasp.net or [@tomaspetricek](https://twitter.com/tomaspetricek)  
 **Tags**: dsl, user interface, visual programming
 
 ### Fuzzy type-checking 
@@ -73,7 +73,7 @@ The goal of this project is to create a "fuzzy" type system that can deal with s
 
 This is probably more theoretical or experimental project, but it could be implemented as a simple language (i.e. for data processing) or it could be written as an additional checker on top of some F# type provider (or it could be integrated in a type provider). On the thoery side, there might be some connection [with Fuzzy Logic](https://en.wikipedia.org/wiki/Fuzzy_logic).
 
-**Contact**: Tomas Petricek (tomas@tomasp.net or [@tomaspetricek](http://twitter.com/tomaspetricek)  
+**Contact**: Tomas Petricek (tomas@tomasp.net or [@tomaspetricek](https://twitter.com/tomaspetricek)  
 **Tags**: types, fuzzy logic, checking, static, dynamic
 
 ## Notes
