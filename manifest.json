@@ -1,0 +1,35 @@
+{
+	"dir" : "ltr",
+	"lang" : "English",
+	"name" : "Community for F#",
+	"scope" : "/",
+	"display" : "standalone",
+	"start_url" : "https://c4fsharp.net/",
+	"short_name" : "C4F#",
+	"theme_color" : "#F99D25",
+	"description" : "The Community for F# provides live streaming and recordings of user group presentations, as well as content for you to use in presenting to your own local user groups.",
+	"orientation" : "any",
+	"background_color" : "#F99D25",
+	"related_applications" : [],
+	"prefer_related_applications" : false,
+	"icons" : [
+		{
+			"src": "https://c4fsharp.net/favicon.ico",
+			"sizes": "16x16 24x24 32x32 64x64"
+		},
+		{
+			"src": "https://c4fsharp.net/ms-icon-150x150.png",
+			"sizes": "150x150"
+		},
+		{
+			"src": "https://c4fsharp.net/favicon-192x192.png",
+			"sizes": "192x192"
+		},
+		{
+			"src": "https://c4fsharp.net/apple-touch-icon.png",
+			"sizes": "180x180"
+		}],
+	"url" : "https://c4fsharp.net/",
+	"screenshots" : [],
+	"generated" : "true"
+}
