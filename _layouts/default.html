@@ -26,7 +26,6 @@
       ga('create', 'UA-47056767-1', 'c4fsharp.net');
       ga('send', 'pageview');
     </script>
-    <script src="pwabuilder-sw-register.js"></script>
 </head>
 <body>
     <a class="sr-only" href="#content">Skip to main content</a>
@@ -45,5 +44,10 @@
         {% include footer.html %}
 
     </div>
+    <script type="module">
+import 'https://cdn.jsdelivr.net/npm/@pwabuilder/pwaupdate';
+const el = document.createElement('pwa-update');
+document.body.appendChild(el);
+    </script>
 </body>
 </html>
