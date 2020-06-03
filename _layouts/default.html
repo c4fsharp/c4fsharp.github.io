@@ -74,7 +74,7 @@ async function main() {
   registerServiceWorker();
   const permission = await requestNotificationPermission();
 }
-main();
+window.addEventListener("DOMContentLoaded", main, false);
     </script>
 </body>
 </html>
