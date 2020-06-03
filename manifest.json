@@ -26,6 +26,10 @@
 			"sizes": "192x192"
 		},
 		{
+			"src": "https://c4fsharp.net/favicon-512x512.png",
+			"sizes": "512x512"
+		},
+		{
 			"src": "https://c4fsharp.net/apple-touch-icon.png",
 			"sizes": "180x180"
 		}],
