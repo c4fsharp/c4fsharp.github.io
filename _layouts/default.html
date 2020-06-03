@@ -46,8 +46,35 @@
     </div>
     <script type="module">
 import 'https://cdn.jsdelivr.net/npm/@pwabuilder/pwaupdate';
-const el = document.createElement('pwa-update');
-document.body.appendChild(el);
+function check() {
+  if (!('serviceWorker' in navigator)) {
+    throw new Error('No Service Worker support!');
+  }
+  if (!('PushManager' in window)) {
+    throw new Error('No Push API Support!');
+  }
+}
+function registerServiceWorker() {
+  const el = document.createElement('pwa-update');
+  document.body.appendChild(el);
+}
+async function requestNotificationPermission() {
+  const permission = await window.Notification.requestPermission();
+  // value of permission can be 'granted', 'default', 'denied'
+  // granted: user has accepted the request
+  // default: user has dismissed the notification permission popup by clicking on x
+  // denied: user has denied the request.
+  if(permission !== 'granted'){
+    throw new Error('Permission not granted for Notification');
+  }
+  return permission;
+}
+async function main() {
+  check();
+  registerServiceWorker();
+  const permission = await requestNotificationPermission();
+}
+main();
     </script>
 </body>
 </html>
