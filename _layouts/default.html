@@ -67,14 +67,13 @@ async function requestNotificationPermission() {
   if(permission !== 'granted'){
     throw new Error('Permission not granted for Notification');
   }
-  return permission;
 }
 async function main() {
   check();
   registerServiceWorker();
-  const permission = await requestNotificationPermission();
+  window.addEventListener("DOMContentLoaded", requestNotificationPermission, false);
 }
-window.addEventListener("DOMContentLoaded", main, false);
+main();
     </script>
 </body>
 </html>
