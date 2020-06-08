@@ -4,21 +4,26 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>{{ page.title }} | {{ site.title }}</title>
-    <link rel='manifest' href='/manifest.json'>
-    <link rel="icon" sizes="192x192" href="/favicon-192x192.png">
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-    <link rel="shortcut icon" href="/favicon.ico">
-    <meta name="msapplication-square150x150logo" content="/ms-icon-150x150.png">
-    <meta name="msapplication-config" content="/browserconfig.xml">
+    <link rel="manifest" href="{{ manifest.json | relative_url }}">
+    <link rel="icon" sizes="192x192" href="{{ favicon-192x192.png | relative_url }}">
+    <link rel="apple-touch-icon" href="{{ apple-touch-icon.png | relative_url }}">
+    <link rel="shortcut icon" href="{{ favicon.ico | relative_url }}">
+    <meta name="msapplication-square150x150logo" content="{{ ms-icon-150x150.png | absolute_url }}">
+    <meta name="msapplication-config" content="{{ browserconfig.xml | absolute_url }}">
     <meta name="msapplication-TileColor" content="#F99D25">
     <meta name="theme-color" content="#F99D25">
     <link rel="stylesheet" href="//cdn.usebootstrap.com/bootstrap/4.3.1/css/bootstrap.min.css" />
     <link rel="stylesheet" href="//kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all" />
     <link rel="stylesheet" href="//kit-free.fontawesome.com/releases/latest/css/free-v4-shims.min.css" media="all" />
-    <link rel="stylesheet" href="Content/style.css" />
-    <link rel="stylesheet" href="Content/pygment_trac.min.css" />
+    <link rel="stylesheet" href="{{ Content/style.css | relative_url }}" />
+    <link rel="stylesheet" href="{{ Content/pygment_trac.min.css | relative_url }}" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <meta name="description" content="{{ site.description }}" />
+    <meta property="og:title" content="{{ page.title }}">
+    <meta property="og:description" content="{{ page.summary }}">
+    <meta property="og:image" content="{{ favicon.ico | absolute_url }}">
+    <meta property="og:url" content="{{ page.url | absolute_url }}">
+    <meta property="og:site_name" content="Community for F#">
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
