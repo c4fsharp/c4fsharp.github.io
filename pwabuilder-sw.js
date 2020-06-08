@@ -2,7 +2,7 @@
 
 importScripts('https://storage.googleapis.com/workbox-cdn/releases/5.0.0/workbox-sw.js');
 
-const CACHE = "pwabuilder-precache-offline";
+const CACHE = "pwabuilder-offline-page";
 
 // TODO: replace the following with the correct offline fallback page i.e.: const offlineFallbackPage = "offline.html";
 const offlineFallbackPage = "offline.html";
@@ -26,7 +26,7 @@ if (workbox.navigationPreload.isSupported()) {
 
 workbox.routing.registerRoute(
   new RegExp('/*'),
-  new workbox.strategies.CacheFirst({
+  new workbox.strategies.StaleWhileRevalidate({
     cacheName: CACHE
   })
 );
