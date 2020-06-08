@@ -5,12 +5,16 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav mr-auto">
-            {% assign mypages = site.pages | sort: "order" %}
-            {% for page in mypages %}
-            {% if page.order != null %}
-            <li class="nav-item"><a class="nav-link" href="{{ page.url | relative_url }}">{{ page.title }}</a></li>
+          {% assign nodes = site.pages | sort: "order" %}
+          {% for node in nodes %}
+            {% if node.order != null %}
+              {% if page.url == node.url %}
+              <li class="active nav-item"><a class="nav-link" href="{{ node.url | relative_url }}">{{ node.title }}</a></li>
+              {% else %}
+              <li class="nav-item"><a class="nav-link" href="{{ node.url | relative_url }}">{{ node.title }}</a></li>
+              {% endif %}
             {% endif %}
-            {% endfor %}
+          {% endfor %}
             <li class="nav-item">
                 <a class="nav-link" href="https://twitter.com/c4fsharp" target="_blank" rel="noopener" style="color:fff">
                     <span class="icon">
