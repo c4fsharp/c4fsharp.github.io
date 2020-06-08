@@ -5,25 +5,15 @@ order: null
 ---
 
 <article class="card-group">
+    {% assign mypages = site.pages | sort: "order" %}
+    {% for page in mypages %}
+    {% if page.order != null %}
     <section class="card text-center card-body">
-        <h1 class="card-title">Videos</h1>
-        <a href="videos.html" title="Videos" class="btn btn-amber">Go</a>
+        <h1 class="card-title">{{ page.title }}</h1>
+        <a href="{{ page.url | relative_url }}" title="{{ page.title }}" class="btn btn-amber">Go</a>
     </section>
-
-    <section class="card text-center card-body">
-        <h1 class="card-title">Learning</h1>
-        <a href="learning.html" title="Learning" class="btn btn-amber">Go</a>
-    </section>
-
-    <section class="card text-center card-body">
-        <h1 class="card-title">Heroes</h1>
-        <a href="heroes.html" title="Heroes" class="btn btn-amber">Go</a>
-    </section>
-
-    <section class="card text-center card-body">
-        <h1 class="card-title">Projects</h1>
-        <a href="project-ideas.html" title="Project Ideas" class="btn btn-amber">Go</a>
-    </section>
+    {% endif %}
+    {% endfor %}
 </article>
 
 <article>
