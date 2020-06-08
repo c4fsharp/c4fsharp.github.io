@@ -2,6 +2,7 @@
 title: Project Ideas
 layout: default
 order: 5
+summary: Review proposed projects and learn how to propose one of your own.
 ---
 
 # {{ page.title }}
