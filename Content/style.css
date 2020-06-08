@@ -10,6 +10,31 @@ body {
     padding-top: 50px;
 }
 
+a {
+    color: #F99D25;
+}
+
+a:hover, a:link, a:visited, a:active {
+    color: #E88820;
+    text-decoration: none;
+}
+
+a.btn-amber {
+    color: #fff;
+    background-color: #F99D25;
+    border-color: #F99D25;
+}
+    .btn-amber:hover {
+        color: #fff;
+        background-color: #E88820;
+        border-color: #E08820;
+    }
+    .btn-amber:not(:disabled):not(.disabled).active, .btn-amber:not(:disabled):not(.disabled):active, .show>.btn-amber.dropdown-toggle {
+        color: #fff;
+        background-color: #F99D25;
+        border-color: #E88820;
+    }
+
 .c4-header {
     color: #fff;
     background-color: #F99D25;
@@ -80,87 +105,6 @@ body {
 
 .c4-brand.navbar-brand {
     color: #fff;
-}
-
-.affix.c4-sidebar {
-    position: static;
-}
-
-.c4-sidenav {
-    margin-top: 30px;
-    margin-bottom: 30px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    text-shadow: 0px 1px 0px #fff;
-    background-color: #f7f5fa;
-    border-radius: 5px;
-}
-
-.c4-sidebar .nav > li > a {
-    display: block;
-    color: #716b7a;
-    padding: 5px 20px;
-}
-
-    .c4-sidebar .nav > li > a:hover,
-    .c4-sidebar .nav > li > a:focus {
-      text-decoration: none;
-      background-color: #e5e3e9;
-      border-right: 1px solid #dbd8e0;
-    }
-
-    .c4-sidebar .nav > .active > a,
-    .c4-sidebar .nav > .active:hover > a,
-    .c4-sidebar .nav > .active:focus > a {
-        font-weight: bold;
-        color: #497c3d;
-        background-color: transparent;
-        border-right: 1px solid #497c3d;
-    }
-
-.c4-sidebar .nav .nav {
-  display: none;
-  margin-bottom: 8px;
-}
-
-    .c4-sidebar .nav .nav > li > a {
-      padding-top: 3px;
-      padding-bottom: 3px;
-      padding-left: 30px;
-      font-size: 90%;
-    }
-
-@media (min-width: 992px) {
-    .c4-sidebar .nav > .active > ul {
-        display: block;
-    }
-
-    .c4-sidebar.affix,
-    .c4-sidebar.affix-bottom {
-        width: 213px;
-    }
-
-    .c4-sidebar.affix {
-        position: fixed;
-        top: 80px;
-    }
-
-    .c4-sidebar.affix-bottom {
-        position: absolute;
-    }
-
-    .c4-sidebar.affix-bottom .c4-sidenav,
-    .c4-sidebar.affix .c4-sidenav {
-        margin-top: 0;
-        margin-bottom: 0;
-    }
-}
-
-@media (min-width: 1200px) {
-    .c4-sidebar.affix-bottom,
-    .c4-sidebar.affix {
-        width: 263px;
-    }
 }
 
 div[role=main] > article,
