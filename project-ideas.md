@@ -1,6 +1,7 @@
 ---
 title: Project Ideas
 layout: default
+order: 5
 ---
 
 # {{ page.title }}

@@ -5,49 +5,33 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav mr-auto">
-            <li class="nav-item"><a class="nav-link" href="https://twitter.com/c4fsharp">Twitter</a></li>
-            <li class="nav-item"><a class="nav-link" href="https://github.com/c4fsharp">GitHub</a></li>
-            <li class="nav-item"><a class="nav-link" href="https://vimeo.com/channels/c4fsharp">Vimeo</a></li>
-            <li class="nav-item"><a class="nav-link" href="https://www.youtube.com/channel/UCCQPh0mSMaVpRcKUeWPotSA/feed">YouTube</a></li>
-            <li class="nav-item"><a class="nav-link" href="https://fsharp.org/">F# Software Foundation</a></li>
-            <li class="nav-item"><a class="nav-link" href="https://community.fsharp.org/user_groups/">User Groups</a></li>
-            <li class="nav-item"><a class="nav-link" href="project-ideas">Project Ideas</a></li>
+          {% assign mypages = site.pages | sort: "order" %}
+            {% for page in mypages %}
+            {% if page.order != null %}
+            <li class="nav-item"><a class="nav-link" href="{{ page.url | absolute_url }}">{{ page.title }}</a></li>
+            {% endif %}
+            {% endfor %}
+            <li class="nav-item">
+                <a class="nav-link" href="https://twitter.com/c4fsharp" target="_blank" rel="noopener" style="color:fff">
+                    <span class="icon">
+                        <i class="fab fa-twitter" aria-hidden="true"></i>
+                    </span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://github.com/c4fsharp" target="_blank" rel="noopener" style="color:fff">
+                    <span class="icon">
+                        <i class="fab fa-github" aria-hidden="true"></i>
+                    </span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://www.youtube.com/channel/UCCQPh0mSMaVpRcKUeWPotSA/feed" target="_blank" rel="noopener" style="color:fff">
+                    <span class="icon">
+                        <i class="fab fa-youtube" aria-hidden="true"></i>
+                    </span>
+                </a>
+            </li>
         </ul>
     </div>
 </nav>
-<!--
-<div class="col-md-3">
-    <div class="c4-sidebar hidden-print affix-top" role="complementary">
-        <ul class="nav c4-sidenav">
-            <li>
-                <a href="#online-presentations">F# Presentations Online</a>
-                <ul class="nav">
-                    <li><a href="#watch-fsharp-presentations">Watch F# Presentations</a></li>
-                    <li><a href="#host-online-event">Share an Event Online</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#fsharp-coding-dojos">F# Coding Dojos</a>
-                <ul class="nav">
-                    <li><a href="#what-is-a-dojo">What is a Dojo?</a></li>
-                    <li><a href="#organizing-a-dojo">Organizing a Dojo</a></li>
-                    <li><a href="#list-of-dojos">Dojo Library</a></li>
-                    <li><a href="#classic-learning-exercises">Classic Coding Exercises</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#fsharp-workshops">F# Workshops</a>
-                <ul class="nav">
-                    <li><a href="#what-is-a-workshop">What is a Workshop?</a></li>
-                    <li><a href="#list-of-workshops">Workshop Library</a></li>
-                </ul>
-            </li>
-            <li><a href="#heroes">Community for F# Heroes</a></li>
-            <li><a href="https://github.com/c4fsharp/c4fsharp.github.io/blob/master/project-ideas.md">Project Ideas</a></li>
-            <li>
-                <a href="#governance">Governance</a>
-            </li>
-        </ul>
-    </div>
-</div>
--->
