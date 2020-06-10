@@ -1,0 +1,134 @@
+﻿html {
+    font-family: sans-serif;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
+    position: relative;
+    padding-top: 50px;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+a {
+    color: #F99D25;
+}
+
+a:hover, a:link, a:visited, a:active {
+    color: #E88820;
+    text-decoration: none;
+}
+
+.collapse:not(.show) {
+    display: none;
+}
+
+.btn, a.btn {
+    display: inline-block;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: #F99D25;
+    border: 1px solid #F99D25;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+    .btn:hover, a.btn:hover {
+        color: #fff;
+        background-color: #E88820;
+        border-color: #E08820;
+    }
+
+    .btn:not(:disabled):not(.disabled).active, .btn:not(:disabled):not(.disabled):active, .show>.btn.dropdown-toggle {
+        color: #fff;
+        background-color: #F99D25;
+        border-color: #E88820;
+    }
+
+.hero {
+    color: #fff;
+    background-color: #F99D25;
+    padding: 30px 15px 40px; /* side padding builds on .container 15px, so 30px */
+    font-size: 16px;
+    text-align: center;
+    text-shadow: 0 1px 0 rgba(0,0,0,.15);
+}
+
+    .hero h1 {
+        color: #fff;
+        width: 64rem;
+    }
+
+        .hero h1 img {
+            width: 100%;
+        }
+
+    .hero p {
+        font-weight: 300;
+        line-height: 1.5;
+    }
+
+footer {
+    padding-top: 40px;
+    padding-bottom: 30px;
+    margin-top: 100px;
+    color: #777;
+    text-align: center;
+    border-top: 1px solid #e5e5e5;
+}
+
+@media (min-width: 768px) {
+    .hero {
+        font-size: 21px;
+        text-align: left;
+    }
+
+        .hero h1 {
+            font-size: 60px;
+            line-height: 1;
+        }
+
+    footer {
+        text-align: left;
+    }
+
+        footer p {
+            margin-bottom: 0;
+        }
+}
+
+@media (min-width: 992px) {
+    .hero h1, .hero p {
+        margin-right: 380px;
+    }
+}
+
+.c4-brand.navbar-brand {
+    color: #fff;
+}
+
+main > article,
+main > article > section {
+    padding-top: 40px;
+} 

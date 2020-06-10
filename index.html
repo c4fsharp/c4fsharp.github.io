@@ -9,24 +9,25 @@ summary: Community for F# Home Page
     {% assign mypages = site.pages | sort: "order" %}
     {% for page in mypages %}
     {% if page.order != null %}
-    <section class="col-sm-6 card text-center card-body">
-        <h1 class="card-title">{{ page.title }}</h1>
+    <section class="col-sm-6 card card-body">
+        <header>
+            <h1 class="card-title">{{ page.title }}</h1>
+        </header>
         <p class="card-body">{{ page.summary }}</p>
-        <a href="{{ page.url | relative_url }}" title="{{ page.title }}" class="btn btn-amber">Go</a>
+        <a href="{{ page.url | relative_url }}" title="{{ page.title }}" class="btn">Go</a>
     </section>
     {% endif %}
     {% endfor %}
-</article>
+    <section class="col-sm-6 card card-body">
+        <header>
+            <h1>Governance</h1>
+        </header>
 
-<article>
-    <header>
-        <h1>Project Governance</h1>
-    </header>
-
-    <p>Community for F# welcomes contributions! These are our current guidelines for accepting contributions:</p>
-    <ul>
-        <li>Use either MIT or Apache 2 license</li>
-        <li>You are free to add your name as the copyright holder, but we will accept pull requests from other contributors</li>
-        <li>The owners reserve the right to curate and remove older, out-of-date content</li>
-    </ul>
+        <p>Community for F# welcomes contributions! These are our current guidelines for accepting contributions:</p>
+        <ul>
+            <li>Use either MIT or Apache 2 license</li>
+            <li>You are free to add your name as the copyright holder, but we will accept pull requests from other contributors</li>
+            <li>The owners reserve the right to curate and remove older, out-of-date content</li>
+        </ul>
+    </section>
 </article>
